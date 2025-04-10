@@ -2,8 +2,6 @@
 
 A robust implementation of the Hough Transform for detecting circles in images. This repository contains a complete pipeline—from pre-processing and edge detection to accumulating votes and thresholding—to accurately detect circular shapes in input images.
 
-With over 10 years of experience in computer vision, this project reflects best practices and delivers a detailed analysis of both the theoretical background and the practical implementation of the Hough Transform.
-
 ---
 
 ## Table of Contents
