@@ -11,7 +11,6 @@ A robust implementation of the Hough Transform for detecting circles in images. 
   - [Introduction](#introduction)
   - [Architecture](#architecture)
   - [Detailed Code Breakdown](#detailed-code-breakdown)
-    - [Convolution Operation: `my_convolve2d`](#convolution-operation-my_convolve2d)
 
 ---
 
@@ -46,6 +45,6 @@ The implementation is divided into two primary aspects:
 
 ---
 ## Installation
-git clone https://github.com/yourusername/hough-transform-circle-detection.git
-cd hough-transform-circle-detection
-pip install -r requirements.txt
+  - git clone https://github.com/yourusername/hough-transform-circle-detection.git
+  - cd hough-transform-circle-detection
+  - pip install -r requirements.txt
