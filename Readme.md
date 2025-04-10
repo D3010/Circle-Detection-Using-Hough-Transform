@@ -45,41 +45,7 @@ The implementation is divided into two primary aspects:
    - **Visualization:** Displays the results with overlays on the original image and heatmaps of the accumulator.
 
 ---
-
-## Detailed Code Breakdown
-
-This section outlines the key functions used in the pipeline.
-
-### Convolution Operation: `my_convolve2d`
-
-Performs a 2D convolution between a grayscale image and a template (kernel) with zero padding. The kernel is first flipped horizontally and vertically to correctly perform the convolution operation.
-
-```python
-def my_convolve2d(image, temp):
-    """
-    Perform a 2D convolution between an image and a template.
-    Implements convolution with zero padding.
-    """
-    # Flip the template (convolution operation)
-    temp = np.flipud(np.fliplr(temp))
-    
-    # Get image and template dimensions
-    iH, iW = image.shape
-    kH, kW = temp.shape
-    
-    # Calculate padding size
-    pad_h, pad_w = kH // 2, kW // 2
-    
-    # Pad the image with zeros
-    padded_image = np.pad(image, ((pad_h, pad_h), (pad_w, pad_w)), mode="constant", constant_values=0)
-    
-    # Initialize the output image
-    output = np.zeros((iH, iW), dtype=np.float64)
-    
-    # Perform convolution
-    for i in range(iH):
-        for j in range(iW):
-            region = padded_image[i:i+kH, j:j+kW]
-            output[i, j] = np.sum(region * temp)
-    
-    return output
+## Installation
+git clone https://github.com/yourusername/hough-transform-circle-detection.git
+cd hough-transform-circle-detection
+pip install -r requirements.txt
